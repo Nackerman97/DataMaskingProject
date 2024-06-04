@@ -18,7 +18,7 @@ BUTTON = '#33CC00'
 ACTIVEBUTTON = '#339900'
 BUTTONFRAME = '#D3D3D3'
 GRAPHFRAME = '#A9A9A9'
-USERFOLDER = 'C:/Users/nacke08/OneDrive - Safeway, Inc/Documents/Projects'
+USERFOLDER = ''
 FILENAME = '\CLEANED_DATA.csv' #OUTPUT FILE NAME
 MAX_DIFF = 0.9
 MIN_DIFF = 0.1
@@ -37,15 +37,15 @@ class SFConnection:
         self.connection = ''
 
     def open_conn(self):
-        username = self.name + '@safeway.com'
+        username = self.name + ''
 
         engine = create_engine(URL(
-        account = 'abs_edw_prd.west-us-2.azure',
+        account = '',
         user = username,
         password = '',
         database = 'DW_PRD',
         schema = '',
-        warehouse = 'PROD_ALLOWANCE_BILLING_WH',
+        warehouse = '',
         role='',
         authenticator='externalbrowser'
         ))
